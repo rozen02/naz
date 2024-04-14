@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="card-container">
+    <div class="card" onclick="toggleCard()">
+        <div class="front">
+            <div class="front-content">
+                <h2>С днем рожденияяяяя брооо!!</h2>
+                <p>Жми жми жми</p>
+            </div>
+        </div>
+        <div class="back">
+            <h2>От всей души поздровляю тебя с днюхой! Выше нос ведь в будущем тебя ждёт только слава и продвижение!!!</h2>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleCard() {
+        const card = document.querySelector('.card');
+        card.classList.toggle('open');
+    }
+</script>
+
+</body>
+</html>
